@@ -1,0 +1,67 @@
+
+
+.wrapper
+  display: grid
+  grid-template-columns: 50px 1fr 1fr 1fr 50px
+  grid-template-rows: repeat(5, 1fr)
+
+.header
+  // background-image: url("https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350")
+  background-color: coral
+  grid-column-start: 1
+  grid-column-end: -1
+  grid-row-start: 1
+
+#my_name
+  grid-column-start: 2
+  grid-column-end: 4
+  grid-row-start: 1
+
+.projects_section
+  // display: grid
+  background-color: aqua 
+  grid-column-start: 2
+  grid-column-end: -2
+  grid-row-start: 2
+  grid-row-end: 3
+  // justify-self: center
+  border: 4px solid black
+  padding: 50px
+
+  .projects_section ul
+    margin: 50px
+
+// .projects_grid
+//   display: grid
+//   grid-template-columns: 1fr 1fr 1fr
+//   grid-template-rows: repeat(2, 1fr)
+//   margin-top: 50px
+  // justify-items: center 
+  // align-items: center
+  // length: 20px
+
+.about
+  background-color: yellow   
+  grid-column-start: 2
+  grid-column-end: -3
+  grid-row-start: 3
+  grid-row-end: 5
+  padding: 30px
+
+#my_image
+  background-image: url("https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=350")
+  background-repeat: no-repeat
+  background-size: 100px
+  background-position: center
+  grid-column-start: 4
+  grid-column-end: 5
+  grid-row-start: 3
+  grid-row-end: 4
+
+#my_social_media
+
+.contact
+  background-color: pink
+  grid-column-start: 2
+  grid-column-end: -2
+

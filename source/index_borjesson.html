@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+<meta content='ie=edge' http-equiv='X-UA-Compatible'>
+<link href='https://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet'>
+<link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css' integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+<link href='/images/tree-bw.jpg' rel='icon'>
+<title>Borjessons</title>
+<link href="/stylesheets/site.css" rel="stylesheet" />
+<script src="/javascripts/site.js"></script>
+</head>
+
+<body>
+
+    <nav class='navbar nav-transparent'>
+    <a class='fas fa-arrow-up fa-2x' id='anim-link' onclick='scrollToElementWithId(0)'></a>
+    <a class='fas fa-project-diagram fa-2x' onclick='scrollToElementWithId(1)'></a>
+    <a class='fas fa-file-alt fa-2x' onclick='scrollToElementWithId(2)'></a>
+    </nav>
+
+    <header class='masthead' id='top'>
+    <div class='title' id='borjessons'>
+    <h1>borjessons</h1>
+    <div class='see-projects'>
+    See projects
+    <a class='fas fa-angle-down fa-2x arrow-anim' onclick='scrollToElementWithId(1)'></a>
+    </div>
+    </div>
+    </header>
+
+<section class='myContainer' id='projects'>
+
+
+
+<h1>Projects</h1>
+<p class='project-paragraph'>Here is a collection of apps and websites that I have made. More on <a href="https://github.com/Rinbo">Github</a></p>
+<div class='project-area'>
+<div id='project_0' onclick='openModal(0)'>
+<a>
+<div class='project-main' style='background-image: url(/images/resume1.png)'>
+<div class='project-title'>
+
+Resume
+</div>
+<div class='project-info'>
+
+My resume
+</div>
+</div>
+</a>
+</div>
+<div class='modal' id='myModal_0'>
+<div class='modal-content'>
+<span class='close'>&times;</span>
+<
+h2>RESUME</h2>
+<p>This is my resume site which I have implemented using the Middleman framework and deployed to Netlify. Projects, experience and certificates are stored in a yaml file and coded in partials using a ruby loop. The partials are then rendered in the index file. This makes for a very tidy and clean code base. As a matter of fact, the index file is just 15 lines of code. The resume site, unlike my portfolio site, is based on a templete.</p>
+<p>Technologies used: Middlman, Jquery, JavaScript, Ruby, HTML/CSS, Netlify</p>
+<p><a href="https://github.com/Rinbo/resume" target="_blank">Link to Github</a></p>
+<p><a href="https://borjesson-resume.netlify.com/" target="_blank">Link to Livesite</a></p>
+</div>
+</div>
+<div id='project_1' onclick='openModal(1)'>
+<a>
+<div class='project-main' style='background-image: url(/images/micro.jpeg)'>
+<div class='project-title'>
+
+The Forge
+</div>
+<div class='project-info'>
+
+Micro blog created with rails
+</div>
+</div>
+</a>
+</div>
+<div class='modal' id='myModal_1'>
+<div class='modal-content'>
+<span class='close'>&times;</span>
+<h2>THE FORGE</h2>
+<p>This is a twitter-like microblog that I created to prepare for Craft Academy. Sign-up (complete with activation email through Heroku addon SendGrid), make microposts and post images (which get stored on AWS S3). Follow other users and have them follow you. Credit to railstutorial.org.</p>
+<p>Technologies used: Ruby on Rails, JavaScript, HTML/CSS, Heroku, SendGrid, AWS-S3, Gravatar</p>
+<p><a href="https://github.com/Rinbo/theforge" target="_blank">Link to Github</a></p>
+<p><a href="https://secret-crag-61716.herokuapp.com/" target="_blank">Link to Livesite</a></p>
+</div>
+</div>
+<div id='project_2' onclick='openModal(2)'>
+<a>
+<div class='project-main' style='background-image: url(/images/rps-js.jpg)'>
+<div class='project-title'>
+RPS-JavaScript
+</div>
+<div class='project-info'>
+Rock Paper Scissor
+</div>
+</div>
+</a>
+</div>
+<div class='modal' id='myModal_2'>
+<div class='modal-content'>
+<span class='close'>&times;</span>
+<h2>RPS-JAVASCRIPT</h2>
+<p>The classic Rock Paper Sciccor game in a web interface that I made as part of a tech interview training exercise at Craft Academy. I began by prototyping the game in ruby and then went on to implement it in JavaScript using a testdriven approach with Chai and cucumber.</p>
+<p>Technologies used: JavaScript, HTML/CSS, Cucumber, Chai</p>
+<p><a href="https://github.com/Rinbo/RPS-js" target="_blank">Link to Github</a></p>
+<p><a href="https://rinbo.github.io/RPS-js/" target="_blank">Link to Livesite</a></p>
+</div>
+</div>
+<div id='project_3' onclick='openModal(3)'>
+<a>
+<div class='project-main' style='background-image: url(/images/nn.jpeg)'>
+<div class='project-title'>
+Neural Network
+</div>
+<div class='project-info'>
+Digit recognition
+</div>
+</div>
+</a>
+</div>
+<div class='modal' id='myModal_3'>
+<div class='modal-content'>
+<span class='close'>&times;</span>
+<h2>NEURAL NETWORK</h2>
+<p>This project is my attempt at putting my machine learning training into practice. I wanted to make a digit recognition model that was able to achieve a non-trivial level of accuracy. After having programmed a dozen different models that only reached around 95-96% accuracy on the cross validation set, I decided to leverege my experience from those models. The result was this network which uses dropout for regularization and leaky rectified units for activation. Due to the nature of dropout the training took one week (on my PC that I locked in a closet). The result was 98.02% accuracy on the crossvalidation set which I am quite proud of. No external libraries were used.</p>
+<p>Technologies used: Matlab/Octave</p>
+<p><a href="https://github.com/Rinbo/ReluNNwithDropout" target="_blank">Link to Github</a></p>
+<p></p>
+</div>
+</div>
+<div id='project_4' onclick='openModal(4)'>
+<a>
+<div class='project-main' style='background-image: url(/images/react.jpg)'>
+<div class='project-title'>
+Title Maker
+</div>
+<div class='project-info'>
+Experimental React-app
+</div>
+</div>
+</a>
+</div>
+<div class='modal' id='myModal_4'>
+<div class='modal-content'>
+<span class='close'>&times;</span>
+<h2>TITLE MAKER</h2>
+<p>This app is a playful experimentation with react. I took several lessons in React at Code Academy, and afterwards I wanted to make something to solidify that knowledge. It is quite trivial but makes use of many React practices.</p>
+<p>Technologies used: React, JavaScript, HTML/CSS</p>
+<p><a href="https://github.com/Rinbo/title-maker" target="_blank">Link to Github</a></p>
+<p><a href="https://rinbo.github.io/title-maker/" target="_blank">Link to Livesite</a></p>
+</div>
+</div>
+<div id='project_5' onclick='openModal(5)'>
+<a>
+<div class='project-main' style='background-image: url(/images/depolarize.jpg)'>
+<div class='project-title'>
+Depolarize
+</div>
+<div class='project-info'>
+Depolarized news
+</div>
+</div>
+</a>
+</div>
+<div class='modal' id='myModal_5'>
+<div class='modal-content'>
+<span class='close'>&times;</span>
+<h2>DEPOLARIZE</h2>
+<p>This project was developed together with two class mates at Craft Academy by following agile methodologies. We had five days to come up with a concept, make a design sprint and then implement our feature stories. Upon entering the site, the user is asked for their political affiliation. Then they get served news from the opposite end of the political spectrum using API requests to newsapi.org. Signup can be made through facebook and a user can also make donations to us with Stripe. The app uses continuous integration and deployment.</p>
+<p>Technologies used: Ruby on Rails, HTML/CSS/, Cucumber, Rspec, Semaphore, Coveralls, FactoryBot, NewsAPI, OAuth, Stripe, Devise, Pivotal Tracker, Heroku</p>
+<p><a href="https://github.com/Rinbo/depolarize" target="_blank">Link to Github</a></p>
+<p><a href="https://depolarize.herokuapp.com/" target="_blank">Link to Livesite</a></p>
+</div>
+</div>
+<div id='project_6' onclick='openModal(6)'>
+<a>
+<div class='project-main' style='background-image: url(/images/heart.jpg)'>
+<div class='project-title'>
+Js Address book
+</div>
+<div class='project-info'>
+JS experiment with local storage
+</div>
+</div>
+</a>
+</div>
+<div class='modal' id='myModal_6'>
+<div class='modal-content'>
+<span class='close'>&times;</span>
+<h2>JS ADDRESS BOOK</h2>
+<p>This app was created using Behaviour Driven Development and pair programming as an exercise at Craft Academy. The user fills in the fields in a contact form and then that information gets displayed on a contact card and stored in the browser's local storage.</p>
+<p>Technologies used: JavaScript, HTML/CSS, Cucumber, Chai</p>
+<p><a href="https://github.com/Rinbo/address-book" target="_blank">Link to Github</a></p>
+<p><a href="https://rinbo.github.io/address-book/" target="_blank">Link to Livesite</a></p>
+</div>
+</div>
+<div id='project_7' onclick='openModal(7)'>
+<a>
+<div class='project-main' style='background-image: url(/images/bmi-calculator.png)'>
+<div class='project-title'>
+BMI Calculator
+</div>
+<div class='project-info'>
+JavaScript BMI Calculator
+</div>
+</div>
+</a>
+</div>
+<div class='modal' id='myModal_7'>
+<div class='modal-content'>
+<span class='close'>&times;</span>
+<h2>BMI CALCULATOR</h2>
+<p>This is a simple JavaScript app in which the user inputs his weight and height in a web interface. The app then calculates that persons BMI-value in both metric and imperial units and displays it onscreen with a message describing the users healthiness.</p>
+<p>Technologies used: JavaScript, HTML/CSS, Chai</p>
+<p><a href="https://github.com/Rinbo/bmi-challenge" target="_blank">Link to Github</a></p>
+<p><a href="https://rinbo.github.io/bmi-challenge/src/index.html" target="_blank">Link to Livesite</a></p>
+</div>
+</div>
+<div id='project_8' onclick='openModal(8)'>
+<a>
+<div class='project-main' style='background-image: url(/images/ionic-bmi.jpeg)'>
+<div class='project-title'>
+Ionic BMI
+</div>
+<div class='project-info'>
+BMI calculator created with Ionic
+</div>
+</div>
+</a>
+</div>
+<div class='modal' id='myModal_8'>
+<div class='modal-content'>
+<span class='close'>&times;</span>
+<h2>IONIC BMI</h2>
+<p>Mobile application in which the user enters his or her weight and height and gets returned their BMI score along with a message informing them about their BMI status. Programmed in Ionic3 and tested with Jasmine and Protractor</p>
+<p>Technologies used: Ionic, TypeScript, HTML/CSS, Protractor, Jasmine, Karma</p>
+<p><a href="https://github.com/Rinbo/ionic-bmi-calculator" target="_blank">Link to Github</a></p>
+<p><a href="https://github.com/Rinbo/ionic-bmi-calculator" target="_blank">Link to Livesite</a></p>
+</div>
+</div>
+<div id='project_9' onclick='openModal(9)'>
+<a>
+<div class='project-main' style='background-image: url(/images/rr-blog.jpg)'>
+<div class='project-title'>
+My blog
+</div>
+<div class='project-info'>
+Sharing my thoughts about whatever comes to mind
+</div>
+</div>
+</a>
+</div>
+<div class='modal' id='myModal_9'>
+<div class='modal-content'>
+<span class='close'>&times;</span>
+<h2>MY BLOG</h2>
+<p>This is my blog that I created a while back. It is in need of a design update but the functionality is working pretty well. I can access the backend in any browser and make posts through the admin interface. I use AWS S3 for picture uploads and Redcarpet for HTML markdown.</p>
+<p>Technologies used: Ruby on Rails, JavaScript, HTML/CSS. Active Admin, RedCarpet Markdown, AWS-S3</p>
+<p><a href="https://github.com/Rinbo/reflective-rr" target="_blank">Link to Github</a></p>
+<p><a href="https://rr-repo.herokuapp.com/" target="_blank">Link to Livesite</a></p>
+</div>
+</div>
+<div id='project_10' onclick='openModal(10)'>
+<a>
+<div class='project-main' style='background-image: url(/images/cooper-client.png)'>
+<div class='project-title'>
+Cooper Test Client
+</div>
+<div class='project-info'>
+Cooper test mobile app created with ionic
+</div>
+</div>
+</a>
+</div>
+<div class='modal' id='myModal_10'>
+<div class='modal-content'>
+<span class='close'>&times;</span>
+<h2>COOPER TEST CLIENT</h2>
+<p>This is the client side (mobile app) of the cooper application. A user can enter his/her cooper data and be served an evaluation. If the users want to store their results and see historical data presented in graphs, they must signup to the application. When doing this the client makes a call to a backend rails application which manages user authentification and storage in a PostgreSQL database (see backend app in projects).</p>
+<p>Technologies used: Ionic, TypeScript, HTML/CSS, Protractor, Jasmine, Karma</p>
+<p><a href="https://github.com/Rinbo/cooper-client" target="_blank">Link to Github</a></p>
+<p></p>
+</div>
+</div>
+<div id='project_11' onclick='openModal(11)'>
+<a>
+<div class='project-main' style='background-image: url(/images/cooper-api.png)'>
+<div class='project-title'>
+Cooper Backend
+</div>
+<div class='project-info'>
+Cooper test backend API
+</div>
+</div>
+</a>
+</div>
+<div class='modal' id='myModal_11'>
+<div class='modal-content'>
+<span class='close'>&times;</span>
+<h2>COOPER BACKEND</h2>
+<p>This app serves as the backend to an Ionic mobile app (see Cooper Test Client among my other projects), which provides a user with a cooper test performance evaluation. The backend manages user authenticaiton/authorization and data storage in a Postgres database. The Ionic client app communicates with the backend through API request.</p>
+<p>Technologies used: Ruby on Rails, Heroku, Postgres</p>
+<p><a href="https://github.com/Rinbo/cooper-api" target="_blank">Link to Github</a></p>
+<p></p>
+</div>
+</div>
+<div id='project_12' onclick='openModal(12)'>
+<a>
+<div class='project-main' style='background-image: url(/images/angular-ab.png)'>
+<div class='project-title'>
+Ng Address Book
+</div>
+<div class='project-info'>
+Simple address book created with angular
+</div>
+</div>
+</a>
+</div>
+<div class='modal' id='myModal_12'>
+<div class='modal-content'>
+<span class='close'>&times;</span>
+<h2>NG ADDRESS BOOK</h2>
+<p>This app is an address book created with Angular using a test driven approach. The app is trivial and merely for learning to use Angular and the intricacies of testing such an application. The contact information that is put into the fields will displayed on a nicly formatted contact card but will not persist.</p>
+<p>Technologies used: Angular, TypeScript, Jasmine, Protractor, Karma</p>
+<p><a href="https://github.com/Rinbo/angular-address-book" target="_blank">Link to Github</a></p>
+<p></p>
+</div>
+</div>
+<div id='project_13' onclick='openModal(13)'>
+<a>
+<div class='project-main' style='background-image: url(/images/open-articles.png)'>
+<div class='project-title'>
+Open articles
+</div>
+<div class='project-info'>
+Basic site for publishing articles
+</div>
+</div>
+</a>
+</div>
+<div class='modal' id='myModal_13'>
+<div class='modal-content'>
+<span class='close'>&times;</span>
+<h2>OPEN ARTICLES</h2>
+<p>This is a site for publishing articles on the web. An admin can log in and publish articles using the browser. Users can comment on those articles without signup. I haven't styled the site but I decided to publish it to display its simplicity yet pretty advanced features. Using ruby on rails I can start from nothing and have such a site up and running on heroku in 15 minutes.</p>
+<p>Technologies used: Ruby on Rails, HTML/CSS, Cucumber, Rspec, Heroku</p>
+<p><a href="https://github.com/Rinbo/rails_bdd" target="_blank">Link to Github</a></p>
+<p><a href="https://open-articles.herokuapp.com/" target="_blank">Link to Livesite</a></p>
+</div>
+</div>
+<div id='project_14' onclick='openModal(14)'>
+<a>
+<div class='project-main' style='background-image: url(/images/fizzbuzz.png)'>
+<div class='project-title'>
+FizzBuzz
+</div>
+<div class='project-info'>
+Test driven ruby project
+</div>
+</div>
+</a>
+</div>
+<div class='modal' id='myModal_14'>
+<div class='modal-content'>
+<span class='close'>&times;</span>
+<h2>FIZZBUZZ</h2>
+<p>The famous fizzbuzz coding challange programmed in Javascript using TDD and published in a web interface.</p>
+<p>Technologies used: JavaScript, HTML/CSS, Chai</p>
+<p><a href="https://github.com/Rinbo/fizzbuzz-js" target="_blank">Link to Github</a></p>
+<p><a href="https://rinbo.github.io/fizzbuzz-js/" target="_blank">Link to Livesite</a></p>
+</div>
+</div>
+<div id='project_15' onclick='openModal(15)'>
+<a>
+<div class='project-main' style='background-image: url(/images/math.jpg)'>
+<div class='project-title'>
+Mathematics
+</div>
+<div class='project-info'>
+Survey form
+</div>
+</div>
+</a>
+</div>
+<div class='modal' id='myModal_15'>
+<div class='modal-content'>
+<span class='close'>&times;</span>
+<h2>MATHEMATICS</h2>
+<p>A simple website for practicing using HTML form elements. This website was made as part of the FreeCodeCamp responsive web design course.</p>
+<p>Technologies used: HTML/CSS</p>
+<p><a href="https://github.com/Rinbo/rinbo.github.io" target="_blank">Link to Github</a></p>
+<p><a href="https://rinbo.github.io/survey.html" target="_blank">Link to Livesite</a></p>
+</div>
+</div>
+<div id='project_16' onclick='openModal(16)'>
+<a>
+<div class='project-main' style='background-image: url(/images/tree-bw.jpg)'>
+<div class='project-title'>
+The tree
+</div>
+<div class='project-info'>
+A tribute page
+</div>
+</div>
+</a>
+</div>
+<div class='modal' id='myModal_16'>
+<div class='modal-content'>
+<span class='close'>&times;</span>
+<h2>THE TREE</h2>
+<p>A simple website to practice styling. It is not much to show, but I like the poem :). It was made as part of the FreeCodeCamp responsive web design course.</p>
+<p>Technologies used: HTML/CSS</p>
+<p><a href="https://github.com/Rinbo/rinbo.github.io" target="_blank">Link to Github</a></p>
+<p><a href="https://rinbo.github.io/tribute.html" target="_blank">Link to Livesite</a></p>
+</div>
+</div>
+<div id='project_17' onclick='openModal(17)'>
+<a>
+<div class='project-main' style='background-image: url(/images/tech-doc.jpg)'>
+<div class='project-title'>
+Tech Doc Page
+</div>
+<div class='project-info'>
+Ruby technical documentation
+</div>
+</div>
+</a>
+</div>
+<div class='modal' id='myModal_17'>
+<div class='modal-content'>
+<span class='close'>&times;</span>
+<h2>TECH DOC PAGE</h2>
+<p>A website to practice technical documentation design in a webpage format. I actually did not copy any of the information on the site. Instead I opted to write it down myself to better solidify my ruby knowledge. The site was made as part of the FreeCodeCamp responsive web design course.</p>
+<p>Technologies used: HTML/CSS</p>
+<p><a href="https://github.com/Rinbo/rinbo.github.io" target="_blank">Link to Github</a></p>
+<p><a href="https://rinbo.github.io/tech-doc.html" target="_blank">Link to Livesite</a></p>
+</div>
+</div>
+</div>
+
+</section>
+<section class='profile' id='about'>
+<div class='about-me'>
+<div class='bio'>
+<h3>Robin Börjesson</h3>
+<ul>
+<li>Master of Science in Mechacnical Engineering at <a href="https://www.topuniversities.com/universities/chalmers-university-technology">Chalmers University of Technology</a></li>
+<li>Lead Mechancial Engineer at <a href="https://www.akzonobel.com/en/about-us/specialty-chemicals">Akzo Nobel</a></li>
+<li>Student at <a href="https://www.craftacademy.se">Craft Academy</a></li>
+</ul>
+<ul>
+<li>I live in <a href="https://goo.gl/maps/xWpNcso8dv62">Gothenburg</a> together with my wife and two wonderful young boys. A few years back I started programming for fun on my spare time. I loved the instant feedback and the creative process of writing code. For that reason I decided to attend the bootcamp at Craft Academy and study software development full time. My interests include programming, MMA, computer games, Star Trek and good food.</li>
+</ul>
+<ul>
+<li>Checkout my resume <a href="https://borjesson-resume.netlify.com/">here</a></li>
+</ul>
+</div>
+<div class='profile-image'>
+<img src='/images/rb-profile.jpg'>
+</div>
+<div class='social-links'>
+<a class='fa fa-linkedin' href='https://www.linkedin.com/in/robin-b%C3%B6rjesson/' target='_blank'></a>
+<a class='fa fa-github' href='https://github.com/Rinbo' target='_blank'></a>
+<a class='fa fa-facebook' href='https://www.facebook.com/robindjuret' target='_blank'></a>
+<a class='fa fa-twitter' href='https://twitter.com/BorjessonR' target='_blank'></a>
+<a class='fa fa-google' href='https://plus.google.com/u/0/110462434175740795086' target='_blank'></a>
+<a class='fa fa-instagram' href='https://www.instagram.com/rollebollle/' target='_blank'></a>
+</div>
+</div>
+
+<div class='footer'>Copyright &copy Robin Börjesson</div>
+</section>
+
+</body>
+</html>

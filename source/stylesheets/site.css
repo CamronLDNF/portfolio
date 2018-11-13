@@ -1,0 +1,54 @@
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 50px;
+    grid-template-rows: repeat(6, 300px);
+}
+
+.header {
+    /* background-image: url("https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350") */
+    background-color: coral;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+}
+
+.projects {
+    background-color: aqua;
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+}
+
+.about {
+    background-color: yellow;
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row-start: 3;
+    grid-row-end: span 2;
+}
+
+.my_image {
+    background-color: lightgreen;
+    grid-column-start: 4;
+    grid-column-end: span 1;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+}
+
+.social_media {
+    background-color: pink;
+    grid-column-start: 4;
+    grid-column-end: span 1;
+    grid-row-start: 4;
+    grid-row-end: span 1;
+}
+
+.contact {
+    background-color: purple;
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    grid-row-start: 5;
+    grid-row-end: span 1;
+}
