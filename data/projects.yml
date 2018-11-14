@@ -1,5 +1,47 @@
-- name: My First Website
-  description: Simple HTML5 site I've build during the PrepCourse
+- id: project_1
+  name: Address Book 1
+  description: this is an address book ....
+  technologies: JavaScript, HTML/CSS, Chai
+  image: images/sample1.jpg
+  github: https://github.com/CamronLDNF/address_book_challenge
+  site: https://camronldnf.github.io/address_book_challenge/
 
-- name: FizzBuzz
-  description: My first Test driven ruby project
+- id: project_2
+  name: Address Book 2
+  description: this is an address book ....
+  technologies: JavaScript, HTML/CSS, Chai
+  image: images/sample1.jpg
+  github: https://github.com/CamronLDNF/address_book_challenge
+  site: https://camronldnf.github.io/address_book_challenge/
+
+- id: project_3
+  name: Address Book 3
+  description: this is an address book ....
+  technologies: JavaScript, HTML/CSS, Chai
+  image: images/sample1.jpg
+  github: https://github.com/CamronLDNF/address_book_challenge
+  site: https://camronldnf.github.io/address_book_challenge/
+
+- id: project_4
+  name: Address Book 4
+  description: this is an address book ....
+  technologies: JavaScript, HTML/CSS, Chai
+  image: images/sample1.jpg
+  github: https://github.com/CamronLDNF/address_book_challenge
+  site: https://camronldnf.github.io/address_book_challenge/
+
+- id: project_5
+  name: Address Book 5
+  description: this is an address book ....
+  technologies: JavaScript, HTML/CSS, Chai
+  image: images/sample1.jpg
+  github: https://github.com/CamronLDNF/address_book_challenge
+  site: https://camronldnf.github.io/address_book_challenge/
+
+- id: project_6
+  name: Address Book 6
+  description: this is an address book ....
+  technologies: JavaScript, HTML/CSS, Chai
+  image: images/sample1.jpg
+  github: https://github.com/CamronLDNF/address_book_challenge
+  site: https://camronldnf.github.io/address_book_challenge/
