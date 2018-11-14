@@ -26,246 +26,39 @@
             <p>Camron Moradi</p>
     </div>
 
-    <div class="projects">
-
-        <!-- <h3>Projects</h3> -->
-            <% data.projects.each do |project| %>
-            <div class="projects_grid_items">
-                <img src="<%= project[:image] %>" style="width:30px;height:auto;border:0;"> 
-                <h4><%= project[:name] %></h4>
-                <p><%= project[:description] %></p>
-            </div>
+    <div class="cards">
+    
+        <% data.projects.each do |project| %>
+            <div>
+                <div class="card">
+                    <img src="<%= project[:image] %>" style="width:30px;height:auto;border:0;">
+                    <div class="card-title">
+                        <a href="#" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2>
+                            <%= project[:name] %>
+                            <small><%= project[:technologies] %></small>
+                        </h2>
+                    </div>
+                    <div class="card-flap flap1">
+                        <div class="card-description">
+                            <%= project[:description] %>
+                        </div>
+                    <div class="card-flap flap2">
+                        <div class="card-actions">
+                            <a href="#" class="btn">Read more</a>
+                        </div>
+                    </div>
+                </div>
             <% end %>
-
+            </div>
+        
     </div>
-
-    <!-- beginning of cards section -->       
-
-
-  <div class="cards">
-
-  <div class="card">
-    <img src="http://s4c.cymru/temp/wave1.jpg">
-    <div class="card-title">
-      <a href="#" class="toggle-info btn">
-        <span class="left"></span>
-        <span class="right"></span>
-      </a>
-      <h2>
-          Card title
-          <small>Image from unsplash.com</small>
-      </h2>
-    </div>
-    <div class="card-flap flap1">
-      <div class="card-description">
-        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-      </div>
-      <div class="card-flap flap2">
-        <div class="card-actions">
-          <a href="#" class="btn">Read more</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-    <div class="card">
-    <img src="http://s4c.cymru/temp/wave2.jpg">
-    <div class="card-title">
-      <a href="#" class="toggle-info btn">
-        <span class="left"></span>
-        <span class="right"></span>
-      </a>
-      <h2>
-          Card title
-          <small>Image from unsplash.com</small>
-      </h2>
-    </div>
-    <div class="card-flap flap1">
-      <div class="card-description">
-        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-      </div>
-      <div class="card-flap flap2">
-        <div class="card-actions">
-          <a href="#" class="btn">Read more</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="http://s4c.cymru/temp/wave3.jpg">
-    <div class="card-title">
-      <a href="#" class="toggle-info btn">
-        <span class="left"></span>
-        <span class="right"></span>
-      </a>
-      <h2>
-          Card title
-          <small>Image from unsplash.com</small>
-      </h2>
-    </div>
-    <div class="card-flap flap1">
-      <div class="card-description">
-        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-      </div>
-      <div class="card-flap flap2">
-        <div class="card-actions">
-          <a href="#" class="btn">Read more</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="http://s4c.cymru/temp/wave2.jpg">
-    <div class="card-title">
-      <a href="#" class="toggle-info btn">
-        <span class="left"></span>
-        <span class="right"></span>
-      </a>
-      <h2>
-          Card title
-          <small>Image from unsplash.com</small>
-      </h2>
-    </div>
-    <div class="card-flap flap1">
-      <div class="card-description">
-        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-      </div>
-      <div class="card-flap flap2">
-        <div class="card-actions">
-          <a href="#" class="btn">Read more</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="http://s4c.cymru/temp/wave3.jpg">
-    <div class="card-title">
-      <a href="#" class="toggle-info btn">
-        <span class="left"></span>
-        <span class="right"></span>
-      </a>
-      <h2>
-          Card title
-          <small>Image from unsplash.com</small>
-      </h2>
-    </div>
-    <div class="card-flap flap1">
-      <div class="card-description">
-        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-      </div>
-      <div class="card-flap flap2">
-        <div class="card-actions">
-          <a href="#" class="btn">Read more</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="http://s4c.cymru/temp/wave1.jpg">
-    <div class="card-title">
-      <a href="#" class="toggle-info btn">
-        <span class="left"></span>
-        <span class="right"></span>
-      </a>
-      <h2>
-          Card title
-          <small>Image from unsplash.com</small>
-      </h2>
-    </div>
-    <div class="card-flap flap1">
-      <div class="card-description">
-        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-      </div>
-      <div class="card-flap flap2">
-        <div class="card-actions">
-          <a href="#" class="btn">Read more</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="http://s4c.cymru/temp/wave3.jpg">
-    <div class="card-title">
-      <a href="#" class="toggle-info btn">
-        <span class="left"></span>
-        <span class="right"></span>
-      </a>
-      <h2>
-          Card title
-          <small>Image from unsplash.com</small>
-      </h2>
-    </div>
-    <div class="card-flap flap1">
-      <div class="card-description">
-        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-      </div>
-      <div class="card-flap flap2">
-        <div class="card-actions">
-          <a href="#" class="btn">Read more</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="card">
-    <img src="http://s4c.cymru/temp/wave1.jpg">
-    <div class="card-title">
-      <a href="#" class="toggle-info btn">
-        <span class="left"></span>
-        <span class="right"></span>
-      </a>
-      <h2>
-          Card title
-          <small>Image from unsplash.com</small>
-      </h2>
-    </div>
-    <div class="card-flap flap1">
-      <div class="card-description">
-        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-      </div>
-      <div class="card-flap flap2">
-        <div class="card-actions">
-          <a href="#" class="btn">Read more</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="http://s4c.cymru/temp/wave2.jpg">
-    <div class="card-title">
-      <a href="#" class="toggle-info btn">
-        <span class="left"></span>
-        <span class="right"></span>
-      </a>
-      <h2>
-          Card title
-          <small>Image from unsplash.com</small>
-      </h2>
-    </div>
-    <div class="card-flap flap1">
-      <div class="card-description">
-        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-      </div>
-      <div class="card-flap flap2">
-        <div class="card-actions">
-          <a href="#" class="btn">Read more</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
 
 
     <!-- end of cards section -->
-
-    </div>
 
     <div class=about>
         <h3>About</h3>

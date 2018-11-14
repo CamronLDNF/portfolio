@@ -23,7 +23,7 @@
     grid-row-end: span 1;
 }
 
-.projects {
+/* .projects {
     background-color: aqua;
     grid-column-start: 1;
     grid-column-end: span 2;
@@ -32,14 +32,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-}
+} */
 
 /* .projects_grid css rule set not needed if using cards; delete when site completeed */
-.projects_grid_items {
+/* .projects_grid_items {
     background-color: grey;
     margin: 20px;
     border: 2px dotted red;
-}
+} */
 
 .cards {
     background-color: burlywood;
@@ -47,6 +47,10 @@
     grid-column-end: span 2;
     grid-row-start: 4;
     grid-row-end: span 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 2px dotted red;
 }
 
 
@@ -88,7 +92,7 @@
 *********************
 *********************/
 
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900);
+/* @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900);
 body {
   background: #dce1df;
   color: #4f585e;
@@ -262,4 +266,4 @@ div.card.show div.flap1 {
 div.card.show div.flap2 {
   -webkit-transition: all 0.3s 0.2s ease-out;
   transition: all 0.3s 0.2s ease-out;
-}
+} */
