@@ -3,54 +3,60 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(7, auto);
-}
-
-#nav {
-    background-color: violet;
-    grid-column-start: 1;
-    grid-column-end: span 2;
-    grid-row-start: 1;
-    grid-row-end: span 1;
-    /* float: right; */
+    background-color: #dce1df;
 }
 
 .header {
-    /* background-image: url("https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350") */
-    background-color: coral;
+    display: none;
     grid-column-start: 1;
     grid-column-end: -1;
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-row-end: span 1;
 }
 
-/* .projects {
-    background-color: aqua;
-    grid-column-start: 1;
-    grid-column-end: span 2;
-    grid-row-start: 3;
-    grid-row-end: span 1;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-} */
+#header_title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    font-size: 40px;
+    color: black;
+    background-color: hsla(0,0%,50.6%,0.5);
+    padding-top: -30px;
+    padding-bottom: -30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px; 
+    /* float: right; */
+}
 
-/* .projects_grid css rule set not needed if using cards; delete when site completeed */
-/* .projects_grid_items {
-    background-color: grey;
-    margin: 20px;
-    border: 2px dotted red;
-} */
+/* position: fixed;
+left: -80px;
+transition: 0.3s;
+padding: 15px;
+width: 90px;
+text-decoration: none;
+font-size: 20px;
+color: white;
+border-radius: 0 5px 5px 0; */
+
 
 .cards {
-    background-color: burlywood;
+    /* background-color: burlywood; */
     grid-column-start: 1;
     grid-column-end: span 2;
-    grid-row-start: 4;
+    grid-row-start: 2;
     grid-row-end: span 1;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    border: 2px dotted red;
+    padding-top: -30px;
+}
+
+.card {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 
@@ -58,7 +64,7 @@
     background-color: yellow;
     grid-column-start: 1;
     grid-column-end: span 1;
-    grid-row-start: 5;
+    grid-row-start: 3;
     grid-row-end: span 2;
 }
 
@@ -66,7 +72,7 @@
     background-color: lightgreen;
     grid-column-start: 2;
     grid-column-end: span 1;
-    grid-row-start: 5;
+    grid-row-start: 3;
     grid-row-end: span 1;
 }
 
@@ -74,7 +80,7 @@
     background-color: pink;
     grid-column-start: 2;
     grid-column-end: span 1;
-    grid-row-start: 6;
+    grid-row-start: 4;
     grid-row-end: span 1;
 }
 
@@ -82,8 +88,50 @@
     background-color: purple;
     grid-column-start: 1;
     grid-column-end: span 2;
-    grid-row-start: 7;
+    grid-row-start: 5;
     grid-row-end: span 1;
+}
+
+/********************
+*********************
+ NAV section 
+*********************
+*********************/
+
+#mySidenav a {
+    position: fixed;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 90px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#home {
+    top: 20px;
+    background-color: #818181;
+}
+
+#projects {
+    top: 80px;
+    background-color: #818181;
+}
+
+#about {
+    top: 140px;
+    background-color: #818181;
+}
+
+#contact {
+    top: 200px;
+    background-color: #818181;
 }
 
 /********************
@@ -129,7 +177,7 @@ a.btn:active {
   transition: all 0.025s 0s ease-out;
 }
 div.cards {
-  margin: 80px auto;
+  margin: 40px auto;
   max-width: 960px;
   text-align: center;
 }

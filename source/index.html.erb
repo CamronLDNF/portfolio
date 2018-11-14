@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Camron's site</title>
+    <title>Camron's portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,21 +9,22 @@
 </head>
 
 <body class="wrapper">
-
-    <nav id="nav">
-        <ul>
-            <a href="#">Home</a>
-            <a href="#">Projects</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </ul>
-    </nav>
-
+    
     <div class="header">
 
-        <h3>Header</h3>
+        <img src="./images/landscape.jpg" style="width:100%;height:auto;border:0;">
 
-            <p>Camron Moradi</p>
+        <div id="mySidenav" class="sidenav">
+            <a href="#" id="home">Home</a>
+            <a href="#" id="projects">Projects</a>
+            <a href="#" id="about">About</a>
+            <a href="#" id="contact">Contact</a>
+        </div>
+
+        <div id="header_title">
+            <h2>Camron's portfolio</h2>
+        </div>
+
     </div>
 
  <div class="cards">
@@ -31,7 +32,7 @@
         <% data.projects.each do |project| %>
             <div>
                 <div class="card">
-                    <img src="<%= project[:image] %>" style="width:300px;height:200;border:0;">
+                    <img src="<%= project[:image] %>" style="width:350px;height:250;border:0;">
                     <div class="card-title">
                         <a href="#" class="toggle-info btn">
                             <span class="left"></span>
