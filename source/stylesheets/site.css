@@ -57,7 +57,7 @@
     padding-left: 25px;
 }
 .about {
-    /* background-color: yellow; */
+    background-color: #f5f2f0;
     grid-column-start: 1;
     grid-column-end: span 1;
     grid-row-start: 3;
@@ -70,7 +70,7 @@
 }
 
 #my_image {
-    /* background-color: lightgreen; */
+    background-color: #f5f2f0;
     grid-column-start: 2;
     grid-column-end: span 1;
     grid-row-start: 3;
@@ -80,7 +80,7 @@
 }
 
 #social_media {
-    /* background-color: pink; */
+    background-color: #f5f2f0;
     grid-column-start: 2;
     grid-column-end: span 1;
     grid-row-start: 4;
@@ -92,7 +92,7 @@
 }
 
 .contact {
-    background-color: purple;
+    /* background-color: purple; */
     grid-column-start: 1;
     grid-column-end: span 2;
     grid-row-start: 5;

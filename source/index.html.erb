@@ -51,7 +51,7 @@
                     <div class="card-flap flap2">
                     <br><br><br>
                         <div class="card-actions">
-                            <a href="#" class="btn">View project</a>
+                            <a href="" class="btn">View project</a>
                         </div>
                     </div>
                 </div>
@@ -88,8 +88,21 @@
     </div>
 
     <div class="contact">
-        <h3>Contact</h3>
-        <p>Netlify form</p>
+        <form name="contact" method="POST" netlify>
+            <p>
+                <label>Your Name: <input type="text" name="name" /></label>   
+            </p>
+            <p>
+                <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+                <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+                <button type="submit">Send</button>
+            </p>
+        </form>
+
     </div>
 
 </body>
