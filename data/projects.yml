@@ -1,41 +1,35 @@
-- name: Address Book 1
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  technologies: JavaScript, HTML/CSS, Chai
-  image: images/sample1.jpg
+- name: Address book
+  description: An address book allowing add new contacts and view existing ones.
+  technologies: JavaScript, HTML/CSS, Puppeteer
+  image: images/address.jpg
   github: https://github.com/CamronLDNF/address_book_challenge
-  site: https://camronldnf.github.io/address_book_challenge/
 
-- name: Address Book 2
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  technologies: JavaScript, HTML/CSS, Chai
-  image: images/sample1.jpg
-  github: https://github.com/CamronLDNF/address_book_challenge
-  site: https://camronldnf.github.io/address_book_challenge/
+- name: Library program
+  description: A library program allowing user to check out books and for library to keep track.
+  technologies: Ruby, RSpec
+  image: images/library.jpg
+  github: https://github.com/CamronLDNF/library-challenge
 
-- name: Address Book 3
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  technologies: JavaScript, HTML/CSS, Chai
-  image: images/sample1.jpg
-  github: https://github.com/CamronLDNF/address_book_challenge
-  site: https://camronldnf.github.io/address_book_challenge/
+- name: ATM program
+  description: An ATM program allowing validated accounts to withdraw available funds.
+  technologies: Ruby, RSpec
+  image: images/atm.jpg
+  github: https://github.com/CamronLDNF/atm_challenge
 
-- name: Address Book 4
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  technologies: JavaScript, HTML/CSS, Chai
-  image: images/sample1.jpg
-  github: https://github.com/CamronLDNF/address_book_challenge
-  site: https://camronldnf.github.io/address_book_challenge/
+- name: Fizzbuzz game
+  description: A simple game alerting users of "Fizz" or "Buzz" depending on input received.
+  technologies: JavaScript, HTML/CSS, Cucumber
+  image: images/fizzbuzz.jpg
+  github: https://github.com/CamronLDNF/fizz_buzz_js
 
-- name: Address Book 5
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  technologies: JavaScript, HTML/CSS, Chai
-  image: images/sample1.jpg
-  github: https://github.com/CamronLDNF/address_book_challenge
-  site: https://camronldnf.github.io/address_book_challenge/
+- name: BMI calculator
+  description: A simple BMI calculator - WIP.
+  technologies: JavaScript, Cucumber
+  image: images/bmi.jpg
+  github: https://github.com/CamronLDNF/BMI_calculator
 
-- name: Address Book 6
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  technologies: JavaScript, HTML/CSS, Chai
-  image: images/sample1.jpg
-  github: https://github.com/CamronLDNF/address_book_challenge
-  site: https://camronldnf.github.io/address_book_challenge/
+- name: Portfolio
+  description: A portfolio page with info on me and my experience.
+  technologies: HTML/CSS, HAML, SASS
+  image: images/portfolio.jpg
+  github: https://github.com/CamronLDNF/portfolio
