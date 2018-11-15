@@ -10,15 +10,15 @@
 
 <body class="wrapper">
     
-    <div class="header">
+    <div class="header" id="nav_home">
 
         <img src="./images/landscape.jpg" style="width:100%;height:auto;border:0;">
 
         <div id="mySidenav" class="sidenav">
-            <a href="#" id="home">Home</a>
-            <a href="#" id="projects">Projects</a>
-            <a href="#" id="about">About</a>
-            <a href="#" id="contact">Contact</a>
+            <a href="#nav_home" id="home">Home</a>
+            <a href="#nav_projects" id="projects">Projects</a>
+            <a href="#nav_about" id="about">About</a>
+            <a href="#nav_contact" id="contact">Contact</a>
         </div>
 
         <div id="header_title">
@@ -27,42 +27,46 @@
 
     </div>
 
- <div class="cards">
-    
-        <% data.projects.each do |project| %>
-            <div>
-                <div class="card">
-                    <img src="<%= project[:image] %>" style="width:350px;height:250;border:0;">
-                    <div class="card-title">
-                        <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                        </a>
-                        <h2>
-                            <%= project[:name] %>
-                            <small><%= project[:technologies] %></small>
-                        </h2>
-                    </div>
-                    <div class="card-flap flap1">
-                        <div class="card-description">
-                            <%= project[:description] %>
+<div class="projects_section" id="nav_projects">
+
+        <h3 id="projects_header">Projects</h3>
+
+        <div class="cards">    
+                <% data.projects.each do |project| %>
+                    <div>
+                        <div class="card">
+                            <img src="<%= project[:image] %>" style="width:350px;height:250;border:0;">
+                            <div class="card-title">
+                                <a href="#" class="toggle-info btn">
+                                    <span class="left"></span>
+                                    <span class="right"></span>
+                                </a>
+                                <h2>
+                                    <%= project[:name] %>
+                                    <small><%= project[:technologies] %></small>
+                                </h2>
+                            </div>
+                            <div class="card-flap flap1">
+                                <div class="card-description">
+                                    <%= project[:description] %>
+                                </div>
+                            </div>  <!-- this closing tag was missing -->
+                            <div class="card-flap flap2">
+                            <br><br><br>
+                                <div class="card-actions">
+                                    <a href="https://www.google.com" class="btn" target="_blank">View project</a>
+                                    <%# <a href="https://www.google.com" class="btn">View project</a> %>
+                                </div>
+                            </div>
                         </div>
-                    </div>  <!-- this closing tag was missing -->
-                    <div class="card-flap flap2">
-                    <br><br><br>
-                        <div class="card-actions">
-                            <a href="" class="btn">View project</a>
-                        </div>
                     </div>
-                </div>
-            </div>
-        <% end %>
-        
+                <% end %>       
+        </div>
 </div>
 
     <!-- end of cards section -->
 
-    <div class="about">
+    <div class="about" id="nav_about">
         <div id="about_header">
             <h3>About</h3>
         </div>
@@ -87,8 +91,9 @@
         </a>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="nav_contact">
         <form name="contact" method="POST" netlify>
+            <h3>Contact</h3>
             <p>
                 <label>Your Name: <input type="text" name="name" /></label>   
             </p>
@@ -104,6 +109,8 @@
         </form>
 
     </div>
+
+    <div class="footer">Copyright © Camron - Craft Academy</div>
 
 </body>
 
