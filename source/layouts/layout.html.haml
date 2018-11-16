@@ -5,11 +5,17 @@
     %meta{:charset => "utf-8"}/
     %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}/
     %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", name: "viewport"}/
-    / Use the title from a page's frontmatter if it has one
-    %title= current_page.data.title || "Camron's site"
+    %title= "Coding wonders"
     = stylesheet_link_tag "site"
     = javascript_include_tag "site"
   %body
     = yield
     -# = partial 'partials/about'
     -# = partial 'partials/contact'
+
+  .footer Copyright © Camron - Craft Academy
+
+  %script{:src => 'http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'}
+  %script{:src => 'http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'}
+
+  %script{:src => "./javascripts/site.js"}

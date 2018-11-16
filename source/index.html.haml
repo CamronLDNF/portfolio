@@ -1,0 +1,94 @@
+
+%body.wrapper
+    
+    .header#nav_home
+
+        %img{:src => "./images/landscape.jpg"}
+
+        %div#mySidenav.sidenav
+            %a{:href => "#nav_home", :id => "home"} Home
+            %a{:href => "#nav_projects", :id => "projects"} Projects
+            %a{:href => "#nav_about", :id => "about"} About
+            %a{:href => "#nav_contact", :id => "contact"} Contact
+
+        #header_title
+            %h2 Camron's portfolio
+
+    .projects_section#nav_projects
+
+        %h3#projects_header 
+            Projects
+
+        -# <!-- begin of project cards section -->
+
+        .cards    
+            - data.projects.each do |project|
+                .card
+                    %img{:src => project[:image]}
+                    .card-title
+                        -# <%# <a href="#" class="toggle-info btn"> %>
+                        %a.toggle-info.btn                                
+                            %span.left
+                            %span.right
+                        %h2
+                            = project[:name]
+                        %small= project[:technologies]
+                    .card-flap.flap1
+                        .card-description
+                            = project[:description]
+
+            -# These next few lines, leave commented out. For the flap-out part of cards. 
+
+                                <%# <a href="https://www.craftacademy.se" target="_blank">View project</a> %>
+                        <%# <div class="card-flap flap2">
+                        <br><br><br>
+                            <div class="card-actions">
+                                <a href="https://www.craftacademy.se" class="btn" target="_blank">View project</a>
+
+
+        -# <!-- end of project cards section -->
+
+    #nav_about.about
+        #about_header
+            %h3 About
+        %ul#about_ul
+            %li 
+                MBA 
+                %a{:href => "https://www8.gsb.columbia.edu/", :target => "_blank"} Columbia Business School.
+            %br
+            %li Several years of high-level work in London’s tech & startup %industry.
+            %br
+            %li 
+                I’ve spent the last 20 years living in multiple countries, starting with education and work in the U.S.  Following that, I’ve lived in places such as London, Madrid, and Vietnam. My work life has predominantly been in tech and startups. I’m now at 
+                %a{:href => "https://www.craftacademy.se", :target => "_blank"} Craft Academy 
+                to fill the gap of the one remaining area in my industry that I’ve yet to fully grasp — the actual tech.
+
+    #my_image
+        %img{:src => "./images/my_image.png"}
+
+    #social_media
+        %a{:href => "https://www.linkedin.com/in/camronmoradi/", :target => "_blank"}
+            %img{:src => './images/linkedin.png'}
+        %a{:href => "https://www.instagram.com/camronjuniorldnf/", :target => "_blank"}
+            %img{:src => './images/instagram.png'}
+
+    .contact#nav_contact
+        %form{:name => "contact", :method => "POST", netlify: "" }
+            %h3 Contact
+            %p
+                %label Your Name: 
+                %input{:type => "text", :name =>"name" }  
+            %p
+                %label Your Email: 
+                %input{:type => "email", :name => "email" }
+            %p
+                %label Message: 
+                %textarea{:name => "message"}
+            %p
+                %button{:type => "submit"}
+                    Send
+
+
+
+
+
