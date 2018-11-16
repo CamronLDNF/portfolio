@@ -10,10 +10,10 @@
     = javascript_include_tag "site"
   %body
     = yield
-    -# = partial 'partials/about'
-    -# = partial 'partials/contact'
 
   .footer Copyright © Camron - Craft Academy
+
+  = google_analytics_tag
 
   %script{:src => 'http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'}
   %script{:src => 'http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'}
