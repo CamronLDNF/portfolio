@@ -19,10 +19,10 @@
                     .card-description
                         = project[:description]
 
-        -# For the flap-out part of cards. Not working, so commented out.
-
-                            <%# <a href="https://www.craftacademy.se" target="_blank">View project</a> %>
-                    <%# <div class="card-flap flap2">
-                    <br><br><br>
-                        <div class="card-actions">
-                            <a href="https://www.craftacademy.se" class="btn" target="_blank">View project</a>
+                        %a{href: "https://www.craftacademy.se", target: "_blank"} View project
+                .card-flap.flap2
+                    %br
+                    %br
+                    %br
+                    .card-actions
+                        %a{href: "https://www.craftacademy.se", class: "btn", target: "_blank" } View project
