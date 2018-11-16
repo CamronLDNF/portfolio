@@ -1,11 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900)
 
+  
+// ********************
+// *********************
+//  Main portfolio page  
+// *********************
+// *********************
+
 body 
-  background-color: #dce1df
+  // background-color: #dce1df
   color: #4f585e
   font-family: 'Source Sans Pro', sans-serif
   text-rendering: optimizeLegibility
-
+  
 .wrapper
   display: grid
   grid-template-columns: 1fr 1fr
@@ -150,6 +157,28 @@ body
   color: white
   bottom: 0
   left: 0
+
+
+// ********************
+// *********************
+//  RESUME section 
+// *********************
+// *********************
+
+.resume_wrapper
+  background-color: pink
+  display: grid
+  grid-template-columns: 20% 80%
+  grid-template-rows: repeat(5, auto)
+
+.resume_nav_menu
+  background-color: beige
+  grid-column-start: 1
+  grid-column-end: span 1
+  grid-row-start: 1
+  grid-row-end: -1
+
+.resume_body  
 
 // ********************
 // *********************
