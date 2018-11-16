@@ -1,8 +1,28 @@
-.projects
-    - data.projects.each do |project|
-        %h4= project[:name]
-        %p= project[:description]
+.projects_section#nav_projects
 
-%div.projects
-    %h3 My Portfolio
-    %p Built using the awesome Middleman framework
+    %h3#projects_header 
+        Projects
+
+    .cards    
+        - data.projects.each do |project|
+            .card
+                %img{:src => project[:image]}
+                .card-title
+                    -# <%# <a href="#" class="toggle-info btn"> %>
+                    %a.toggle-info.btn                                
+                        %span.left
+                        %span.right
+                    %h2
+                        = project[:name]
+                    %small= project[:technologies]
+                .card-flap.flap1
+                    .card-description
+                        = project[:description]
+
+        -# For the flap-out part of cards. Not working, so commented out.
+
+                            <%# <a href="https://www.craftacademy.se" target="_blank">View project</a> %>
+                    <%# <div class="card-flap flap2">
+                    <br><br><br>
+                        <div class="card-actions">
+                            <a href="https://www.craftacademy.se" class="btn" target="_blank">View project</a>

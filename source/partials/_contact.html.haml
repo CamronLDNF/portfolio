@@ -1,1 +1,15 @@
--# %p Testing contact
+.contact#nav_contact
+    %form{:name => "contact", :method => "POST", netlify: "" }
+        %h3 Contact
+        %p
+            %label Your Name: 
+            %input{:type => "text", :name =>"name" }  
+        %p
+            %label Your Email: 
+            %input{:type => "email", :name => "email" }
+        %p
+            %label Message: 
+            %textarea{:name => "message"}
+        %p
+            %button{:type => "submit"}
+                Send
