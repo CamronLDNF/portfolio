@@ -6,7 +6,7 @@
     .cards    
         - data.projects.each do |project|
             .card
-                %img{:src => project[:image]}
+                %img{src: project[:image]}
                 .card-title
                     %a.toggle-info.btn                                
                         %span.left
@@ -17,11 +17,9 @@
                 .card-flap.flap1
                     .card-description
                         = project[:description]
-
-                        %a{href: "https://www.craftacademy.se", target: "_blank"} View project
                 .card-flap.flap2
                     %br
                     %br
                     %br
                     .card-actions
-                        %a{href: "https://www.craftacademy.se", class: "btn", target: "_blank" } View project
+                        %a{href: "#{ project[:github]}", class: "btn", target: "_blank", title: "View project on Github" } View project
