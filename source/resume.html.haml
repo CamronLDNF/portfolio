@@ -6,9 +6,32 @@
 
     .resume_body
 
--# For ease, reference the look & structure of my LinkedIn page
+        .resume_about
+            %h1.name
+                Camron
+                %span{class: "last-name"} Moradi
+            %h3.address 11 Commercial Street, London, UK  |  +44 7754 193 111  | camron1234@gmail.com  
+            %h3.about_me I have an entrepreneurial background with initial bluechip experience as a foundation. The last couple of years, I have been in the tech industries in London, working mostly in growth, M&A, and business development. 
 
-        .about
-        .experience
-        .education
-        
+        .resume_social_media
+            %a{:href => "https://www.linkedin.com/in/camronmoradi/", :target => "_blank"}
+                %img{:src => './images/linkedin.png'}
+            %a{:href => "https://www.instagram.com/camronjuniorldnf/", :target => "_blank"}
+                %img{:src => './images/instagram.png'}
+
+        .resume_experience
+            %h1.section_name Experience
+            - data.resume_experience.each do |job|
+                %h2.job_title= job[:title]
+                %h3.company= job[:company]
+                %h3.dates= job[:dates]
+                %h3.location= job[:location]
+                %h3.job_description= job[:description]
+
+        .resume_education
+            %h1.section_name Education
+            - data.resume_education.each do |education|
+                %h2.school= education[:school]
+                %h3.degree= education[:degree]
+                %h3.dates= education[:dates]
+                %h3.location= education[:location]
