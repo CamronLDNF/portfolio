@@ -2,11 +2,19 @@
 .resume_wrapper
 
     .resume_nav_menu
-        %p nav menu text
+        %ul#nav_list
+            %li 
+                %a{href: "#resume_about"} About
+            %li 
+                %a{href: "#resume_experience"} Experience
+            %li 
+                %a{href: "#resume_education"} Education
+            %li 
+                %a{href: "index.html"} Portfolio
 
     .resume_body
 
-        .resume_about
+        .resume_about#resume_about
             %h1.name
                 Camron
                 %span{class: "last-name"} Moradi
@@ -14,12 +22,12 @@
             %h3.about_me I have an entrepreneurial background with initial bluechip experience as a foundation. The last couple of years, I have been in the tech industries in London, working mostly in growth, M&A, and business development. 
 
         .resume_social_media
-            %a{:href => "https://www.linkedin.com/in/camronmoradi/", :target => "_blank"}
-                %img{:src => './images/linkedin.png'}
-            %a{:href => "https://www.instagram.com/camronjuniorldnf/", :target => "_blank"}
-                %img{:src => './images/instagram.png'}
+            %a{href: "https://www.linkedin.com/in/camronmoradi/", target: "_blank"}
+                %img{src: './images/linkedin.png'}
+            %a{href: "https://www.instagram.com/camronjuniorldnf/", target: "_blank"}
+                %img{src: './images/instagram.png'}
 
-        .resume_experience
+        .resume_experience#resume_experience
             %h1.section_name Experience
             - data.resume_experience.each do |job|
                 %h2.job_title= job[:title]
@@ -28,7 +36,7 @@
                 %h3.location= job[:location]
                 %h3.job_description= job[:description]
 
-        .resume_education
+        .resume_education#resume_education
             %h1.section_name Education
             - data.resume_education.each do |education|
                 %h2.school= education[:school]
