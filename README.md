@@ -12,3 +12,12 @@ Languages & frameworks & tools used:
 
 Testing environment:
 * Rspec, Capybara
+
+## How to test
+-------
+To test the app:
+* Download the app folder
+* In your terminal / CLI:
+    * Run `bundle` to install all gems
+    * Run `middleman server` to start the test server
+    * Open a new tab in your terminal, run `rspec` to test

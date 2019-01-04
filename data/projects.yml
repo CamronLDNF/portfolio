@@ -2,7 +2,7 @@
   description: An address book allowing add new contacts and view existing ones.
   technologies: JavaScript, HTML/CSS, Puppeteer
   image: images/address.jpg
-  github: https://github.com/CamronLDNF/address_book_challenge
+  github: https://github.com/CamronLDNF/address_book_2
 
 - name: Library program
   description: A library program allowing user to check out books and for library to keep track.
@@ -26,10 +26,40 @@
   description: A simple BMI calculator - WIP.
   technologies: JavaScript, Cucumber
   image: images/bmi.jpg
-  github: https://github.com/CamronLDNF/BMI_calculator
+  github: https://github.com/CamronLDNF/BMI_calculator_2
 
 - name: Portfolio
   description: A portfolio page with info on me and my experience.
   technologies: HTML/CSS, HAML, SASS
   image: images/portfolio.jpg
   github: https://github.com/CamronLDNF/portfolio
+
+- name: care2share
+  description: A fundraising service for causes one cares about.
+  technologies: ...
+  image: images/...
+  github: https://github.com/CamronLDNF/care2share
+
+- name: Rock Paper Scissors
+  description: A simple rock paper scissors game, built in node.js.
+  technologies: Javascript, Node.js, HTML, CSS
+  image: images/...
+  github: https://github.com/CamronLDNF/rock_paper_scissors_2
+
+- name: Slowfood challenge...
+  description: ...
+  technologies: ...
+  image: images/...
+  github: https://github.com/CamronLDNF/slowfood-oct18-team1
+
+- name: Cooper test
+  description: The Cooper test endurance....
+  technologies: ...
+  image: images/...
+  github: https://github.com/CamronLDNF/cooper_test_client
+
+- name: BMI Ionic Calculator
+  description: The BMI Calculator, built as an Ionic app.
+  technologies: ...
+  image: images/...
+  github: https://github.com/CamronLDNF/bmi_calculator_ionic
