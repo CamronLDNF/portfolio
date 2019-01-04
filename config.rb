@@ -47,6 +47,9 @@ page '/*.txt', layout: false
 #   activate :minify_javascript
 # end
 
-activate :google_analytics do |ga|
-  ga.tracking_id = 'UA-129318112-1' # Replace with your property ID.
-end
+# activate :google_analytics do |ga|
+#   ga.tracking_id = 'UA-129318112-1' # Replace with your property ID.
+# end
+
+# Disable warnings
+Haml::TempleEngine.disable_option_validator!

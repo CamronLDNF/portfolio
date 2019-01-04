@@ -1,9 +1,14 @@
-# Portfolio 
+# **Portfolio**
+-------
+This project is a simple portfolio with a CV page linked to it.
 
-The purpose of this project was to build a portfolio and a resume/CV page.
+The portfolio is [deployed here](https://camronldnf-portfolio.netlify.com/) on Netlify.
 
-Tools used:
-1. Built with Middleman, using HAML, SASS, YAML, JQuery, and Ruby. 
-2. Test enviroment: RSpec
+## Tech stack
+-------
+Languages & frameworks & tools used:
+* Middleman framework
+* HAML, SASS, YAML, JQuery, and Ruby
 
-### Authors: Camron 
+Testing environment:
+* Rspec, Capybara

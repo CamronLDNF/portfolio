@@ -1,7 +1,15 @@
+require 'spec_helper'
+
 describe 'Index Page', type: :feature do
+  before do
+    visit "/"
+  end
     
+  it "responds successfully" do
+    expect(page.status_code).to eql(200)
+  end
+
   it 'header displays a title, a hero, and a nav menu' do
-    visit '/'
 
     expect(page).to have_css '.header'
     within '.header' do
@@ -12,7 +20,6 @@ describe 'Index Page', type: :feature do
   end
 
   it 'project section displays title and project cards' do
-    visit '/'
 
     expect(page).to have_css '.projects_section'
     within '.projects_section' do
@@ -22,7 +29,6 @@ describe 'Index Page', type: :feature do
   end 
       
   it 'about section displays a title, background info, image, and social media links' do
-    visit '/'
 
     expect(page).to have_css '.about'
     within '.about' do
@@ -43,7 +49,6 @@ describe 'Index Page', type: :feature do
   end
 
   it 'contact section displays title and contact form' do
-    visit '/'
 
     expect(page).to have_css '.contact'
     within '.contact' do
