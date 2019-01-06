@@ -40,26 +40,32 @@
   image: images/charity.jpg
   github: https://github.com/CamronLDNF/care2share
 
-- name: Rock Paper Scissors
+- name: Rock paper scissors
   description: A simple rock paper scissors game, built in node.js.
-  technologies: Javascript, Node.js, HTML, CSS
-  image: images/...
+  technologies: Javascript, Node.js, HTML/CSS, Cucumber
+  image: images/rps.png
   github: https://github.com/CamronLDNF/rock_paper_scissors_2
 
-- name: Slowfood challenge...
-  description: ...
-  technologies: ...
-  image: images/...
+- name: Restaurant menu page
+  description: A food ordering application written in Ruby on Rails.
+  technologies: Rails, HAML, Tailwind CSS, Rspec, Cucumber
+  image: images/restaurant.jpg
   github: https://github.com/CamronLDNF/slowfood-oct18-team1
 
-- name: Cooper test
-  description: The Cooper test endurance....
-  technologies: ...
-  image: images/...
+- name: Cooper test app
+  description: A mobile app (and API server) for a Cooper endurance test.
+  technologies: Ionic, Karma, Jasmine, Protractor
+  image: images/cooper_test.jpg
   github: https://github.com/CamronLDNF/cooper_test_client
 
-- name: BMI Ionic Calculator
-  description: The BMI Calculator, built as an Ionic app.
-  technologies: ...
-  image: images/...
+- name: BMI calculator app
+  description: A BMI mobile app calculator, built as an Ionic app.
+  technologies: Ionic, Karma, Jasmine, Protractor
+  image: images/bmi2.jpg
   github: https://github.com/CamronLDNF/bmi_calculator_ionic
+
+- name: Articles blog
+  description: The Rails 'getting started' exercise, an articles blog.
+  technologies: Rails, HAML, Cucumber, Rspec
+  image: images/articles.jpg
+  github: https://github.com/CamronLDNF/rails_bdd_2
