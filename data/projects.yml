@@ -42,13 +42,13 @@
 
 - name: Rock paper scissors
   description: A simple rock paper scissors game, built in node.js.
-  technologies: Javascript, Node.js, HTML/CSS, Cucumber
+  technologies: Javascript, Node, HTML/CSS, Cucumber
   image: images/rps.png
   github: https://github.com/CamronLDNF/rock_paper_scissors_2
 
 - name: Restaurant menu page
   description: A food ordering application written in Ruby on Rails.
-  technologies: Rails, HAML, Tailwind CSS, Rspec, Cucumber
+  technologies: Rails, HAML, Tailwind, Rspec, Cucumber
   image: images/restaurant.jpg
   github: https://github.com/CamronLDNF/slowfood-oct18-team1
 
