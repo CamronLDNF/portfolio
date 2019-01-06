@@ -30,14 +30,14 @@
 
 - name: Portfolio
   description: A portfolio page with info on me and my experience.
-  technologies: HTML/CSS, HAML, SASS
+  technologies: HAML/SASS, Rails, Rspec
   image: images/portfolio.jpg
   github: https://github.com/CamronLDNF/portfolio
 
 - name: care2share
   description: A fundraising service for causes one cares about.
-  technologies: ...
-  image: images/...
+  technologies: HAML/SASS, Rails, Rspec, Cucumber
+  image: images/charity.jpg
   github: https://github.com/CamronLDNF/care2share
 
 - name: Rock Paper Scissors
